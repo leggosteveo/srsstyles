@@ -1,0 +1,165 @@
+body {
+	height: 100%;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+nav {
+	font-family: arial;
+	font-weight: bolder;
+}
+
+
+#about {
+	//font-size: 400%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#about div {
+	font-size: 120%;
+}
+
+
+#aboutHeader {
+	font-family: arial;
+	font-weight: bolder;
+}
+
+#contactDivHeader {
+	font-size: 400%;
+} 
+
+#enter {
+	bottom: 40px;
+	color: white;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#enterButton {
+	font-family: arial;
+	font-weight: bolder;
+	margin: 0 auto;
+	text-shadow: 2px 5px black;
+}
+
+#enterButton a {
+	color: white;
+	text-decoration: none;
+}
+
+#home {
+	height: 100%;
+}
+
+#homepic {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+#navimg {
+	height: 200px;
+	width: 200px;
+}
+
+.categoryDiv {
+	margin-top: 5%;
+}
+
+.categoryHeader {
+	text-align: center;
+}
+
+.categoryHeader h1 {
+
+	color: black;
+	font-family: brush script mt, cursive;
+	font-size: 300%;
+	text-shadow: 2px 4px silver;
+}
+
+.connectRow {
+	//font-size: 200%;
+}
+
+.connectRow img {
+	width: 15px;
+}
+
+.contactDetail {
+	//font-size: 200%;
+}
+
+#contactDivHeader {
+	font-size: 400%;
+}
+
+.contactType {
+	text-align: center;
+}
+
+.container {
+	max-width: 95%;
+}
+
+.itemPic {
+	margin: 5% auto;
+	width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-nav {
+	font-size: 150%;
+    margin-right: ;
+}
+
+.picsDiv {
+	margin: auto;
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+	#about div {
+		font-size: 200%;
+	}
+
+	.contactHeader {
+	font-size: 150%;
+	}
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+	#about div {
+		font-size: 250%;
+	}
+
+	#contactDiv {
+		font-size: 120%;
+	}
+
+	#contactDivHeader {
+	font-size: 300%;
+	}
+
+	.connectRow img {
+		width: 40px;
+	}
+	.contactHeader {
+		font-size: 200%9
+	}
+}
