@@ -3,7 +3,7 @@
 <head>
 	<title>SRSStyles</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/srs.css">
   	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 </head>
@@ -22,12 +22,80 @@
 	        </button>
 	    	<div id="navbar" class="collapse navbar-collapse justify-content-end">
 	            <ul class="navbar-nav">
-	                <li class="nav-item"><a class="nav-link" href="#!/firstPage">Home</a></li>
 	                <li class="nav-item"><a class="nav-link" href="#!/styles">Styles</a></li>
+					<li class="nav-item"><a class="nav-link" href="#!/firstPage">About</a></li>
+					<li>
+						<a href="#!/shopping-cart" class="nav-link">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+							<span class="badge">{{session.cart.totalQty}}</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="/user/signup">Sign Up</a>
+						  <a class="dropdown-item" href="/user/signin">Sign In</a>
+						</div>
+					</li>
 	            </ul>
 	        </div>
 	    </div>
 	</nav>
+
+
+	<!-- 
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			 Brand and toggle get grouped for better mobile display 
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">Brand</a>
+			</div>
+	
+			** Collect the nav links, forms, and other content for toggling **
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="/shopping-cart">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
+							<span class="badge">{{session.cart.totalQty}}</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							{{# if login }}
+								<li><a href="/user/profile">User Account</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="/user/logout">Logout</a></li>
+							{{ else }}
+								<li><a href="/user/signup">Sign Up</a></li>
+								<li><a href="/user/signin">Sign In</a></li>
+							{{/if}}
+						</ul>
+					</li>
+				</ul>
+			</div> ** /.navbar-collapse **
+		</div>** /.container-fluid **
+	</nav> 
+-->
+
+
+
+
+
+
+
+
+
 	<div class="view1">
     	<div class="view2" ng-view></div>
   	</div>
@@ -39,7 +107,11 @@
 <script src="srsApp/app.js"></script>
 <script src="srsApp/home/home-controller.js"></script>
 <script src="srsApp/firstPage/firstPage-controller.js"></script>
+<script src="srsApp/product-data-factory/product-data-factory.js"></script>
+<script src="srsApp/cart-data-factory/cart-data-factory.js"></script>
 <script src="srsApp/styles/styles-controller.js"></script>
+<script src="srsApp/single-style/single-style-controller.js"></script>
+<script src="srsApp/shopping-cart/shopping-cart-controller.js"></script>
 </div>
 </body>
 </html>

@@ -16,6 +16,22 @@ function config($routeProvider) {
 		controller:StylesController,
 		controllerAs:'vm'
 	})
+	.when('/styles/:id', {
+		templateUrl:'srsApp/single-style/single-style.html',
+		controller:SingleStyleController,
+		controllerAs:'vm'
+	})
+	.when('/shopping-cart', {
+		templateUrl:'srsApp/shopping-cart/shopping-cart.html',
+		controller:ShoppingCartController,
+		controllerAs:'vm'
+	})
+	/*
+	.when('/checkout', {
+		templateUrl:'srsApp/checkout/checkout.html',
+		controller:CheckoutController,
+		controllerAs:'vm'
+	}) */
 	.otherwise({
 		redirectTo:'/'
 	});

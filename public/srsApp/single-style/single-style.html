@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .btn-success {
+            background-color: black;
+        }
+
+        .input-group {
+            font-size: 5%;
+        }
+
+        .single-item {
+            padding: 2%;
+        }
+        .single-item-h1 {
+            color: black;
+            font-weight: bolder;
+            text-shadow: 0 0 1px black;
+        }
+        #navimg {
+            height:200px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container single-item">
+            <div class="container row justify-content-center m-auto"><h1 class="single-item-h1">{{product.name}}</h1></div>
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6">
+                   <img src="Blouse4.jpg" class="img-thumbnail single-style-main-img" alt=""> 
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h4>${{product.price}}</h4> 
+                    <div><p>{{product.description}}</p></div>
+                    <hr>
+                    <div class="input-group" role="group">
+                    <label for="bust" class="btn input-group-text form-control">Bust</label>
+                    <input type="text" class="form-control">
+                    <label for="waist" class="btn input-group-text form-control">Waist</label>
+                    <input type="text" class="form-control">
+                    <label for="hip" class="btn input-group-text form-control">Hip</label>
+                    <input type="text" class="form-control">
+                    <button class="btn btn-success form-control">Buy</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

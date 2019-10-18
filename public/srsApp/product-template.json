@@ -1,0 +1,150 @@
+[{
+    "name":"Blouse 1",
+    "category": "blouses",
+    "img_url":"SRSBlouse1.jpg",
+    "price":40,
+    "description":"Description of Blouse 1.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Blouse 2",
+    "category": "blouses",
+    "img_url":"SRSBlouse2.jpg",
+    "price":40,
+    "description":"Description of Blouse 2.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Blouse 3",
+    "category": "blouses",
+    "img_url":"SRSBlouse3.jpg",
+    "price":40,
+    "description":"Description of Blouse 3.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Dress 1",
+    "category": "dresses",
+    "img_url":"SRSDRess1.jpg",
+    "price":60,
+    "description":"Description of Dress 1.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Dress 2",
+    "category": "dresses",
+    "img_url":"Dress7.jpg",
+    "price":60,
+    "description":"Description of Dress 2.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Dress 3",
+    "category": "dresses",
+    "img_url":"Dress3.jpg",
+    "price":60,
+    "description":"Description of Dress 3.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Little Miss 1",
+    "category": "little miss dresses",
+    "img_url":"little1.jpg",
+    "price":40,
+    "description":"Description of Little Miss 1.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Little Miss 2",
+    "category": "little miss dresses",
+    "img_url":"little2.jpg",
+    "price":40,
+    "description":"Description of Little Miss 2.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Little Miss 3",
+    "category": "little miss dresses",
+    "img_url":"SRS_Little_Miss_1.jpg",
+    "price":40,
+    "description":"Description of Little Miss 3.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Sets 1",
+    "category": "sets",
+    "img_url":"Sets1.jpg",
+    "price":60,
+    "description":"Description of Set 1.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Sets 2",
+    "category": "sets",
+    "img_url":"Sets2.jpg",
+    "price":60,
+    "description":"Description of Set 2.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Sets 3",
+    "category": "sets",
+    "img_url":"Sets3.jpg",
+    "price":60,
+    "description":"Description of Set 3.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Jumpsuit 1",
+    "category": "jumpsuits",
+    "img_url":"JumpSuits1.jpg",
+    "price":60,
+    "description":"Description of Jumpsuit 1.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Jumpsuit 2",
+    "category": "jumpsuits",
+    "img_url":"JumpSuits2.jpg",
+    "price":60,
+    "description":"Description of Jumpsuit 2.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+},
+{
+    "name":"Jumpsuit 3",
+    "category": "jumpsuits",
+    "img_url":"JumpSuits3.jpg",
+    "price":60,
+    "description":"Description of Jumpsuit 3.",
+    "bust": null,
+    "waist": null,
+    "hip": null
+}]
