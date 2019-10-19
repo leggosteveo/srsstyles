@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://localhost:27017/srsstyles';
+var dburl = 'mongodb://jovon07:Bulldogs1@ds237308.mlab.com:37308/srsstyles';
 var retry = null;
 mongoose.connect(dburl);
 
