@@ -1,0 +1,15 @@
+{"_id":{"$oid":"5da4b01f2c984f8f8673d607"},"name":"Blouse 1","category":"blouses","img_url":"SRSBlouse1.jpg","price":40.0,"description":"Description of Blouse 1.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d608"},"name":"Blouse 2","category":"blouses","img_url":"SRSBlouse2.jpg","price":40.0,"description":"Description of Blouse 2.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d609"},"name":"Blouse 3","category":"blouses","img_url":"SRSBlouse3.jpg","price":40.0,"description":"Description of Blouse 3.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60a"},"name":"Dress 1","category":"dresses","img_url":"SRSDRess1.jpg","price":60.0,"description":"Description of Dress 1.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60b"},"name":"Dress 2","category":"dresses","img_url":"Dress7.jpg","price":60.0,"description":"Description of Dress 2.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60c"},"name":"Dress 3","category":"dresses","img_url":"Dress3.jpg","price":60.0,"description":"Description of Dress 3.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60d"},"name":"Little Miss 1","category":"little miss dresses","img_url":"little1.jpg","price":40.0,"description":"Description of Little Miss 1.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60e"},"name":"Little Miss 2","category":"little miss dresses","img_url":"little2.jpg","price":40.0,"description":"Description of Little Miss 2.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d60f"},"name":"Little Miss 3","category":"little miss dresses","img_url":"SRS_Little_Miss_1.jpg","price":40.0,"description":"Description of Little Miss 3.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d610"},"name":"Sets 1","category":"sets","img_url":"Sets1.jpg","price":60.0,"description":"Description of Set 1.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d611"},"name":"Sets 2","category":"sets","img_url":"Sets2.jpg","price":60.0,"description":"Description of Set 2.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d612"},"name":"Sets 3","category":"sets","img_url":"Sets3.jpg","price":60.0,"description":"Description of Set 3.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d613"},"name":"Jumpsuit 1","category":"jumpsuits","img_url":"JumpSuits1.jpg","price":60.0,"description":"Description of Jumpsuit 1.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d614"},"name":"Jumpsuit 2","category":"jumpsuits","img_url":"JumpSuits2.jpg","price":60.0,"description":"Description of Jumpsuit 2.","bust":null,"waist":null,"hip":null}
+{"_id":{"$oid":"5da4b01f2c984f8f8673d615"},"name":"Jumpsuit 3","category":"jumpsuits","img_url":"JumpSuits3.jpg","price":60.0,"description":"Description of Jumpsuit 3.","bust":null,"waist":null,"hip":null}

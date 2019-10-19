@@ -14,7 +14,7 @@ var MongoDBStore = require('connect-mongodb-session')(session);
 var routes = require('./api/routes');
 
 var store = new MongoDBStore({
-  uri: 'mongodb://localhost:27017/srsstyles',
+  uri: 'mongodb://jovon07:Bulldogs1@ds237308.mlab.com:37308/srsstyles',
   collection: 'carts'
 })
 app.use(logger('dev'));
