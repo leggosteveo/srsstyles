@@ -31,21 +31,23 @@
             <div class="container row justify-content-center m-auto"><h1 class="single-item-h1">{{product.name}}</h1></div>
             <div class="row align-items-center">
                 <div class="col-12 col-sm-6">
-                   <img src="Blouse4.jpg" class="img-thumbnail single-style-main-img" alt=""> 
+                   <img ng-src="{{product.img_url}}" class="img-thumbnail single-style-main-img" alt=""> 
                 </div>
                 <div class="col-12 col-sm-6">
                     <h4>${{product.price}}</h4> 
                     <div><p>{{product.description}}</p></div>
                     <hr>
-                    <div class="input-group" role="group">
-                    <label for="bust" class="btn input-group-text form-control">Bust</label>
-                    <input type="text" class="form-control">
-                    <label for="waist" class="btn input-group-text form-control">Waist</label>
-                    <input type="text" class="form-control">
-                    <label for="hip" class="btn input-group-text form-control">Hip</label>
-                    <input type="text" class="form-control">
-                    <button class="btn btn-success form-control">Buy</button>
-                    </div>
+                    <form action="/api/cart/add-to-cart/{{product._id}}" method="post">
+                        <div class="input-group" role="group">
+                            <label for="bust" class="btn input-group-text form-control">Bust</label>
+                            <input type="text" name="bust" class="form-control">
+                            <label for="waist" class="btn input-group-text form-control">Waist</label>
+                            <input type="text" name="waist" class="form-control">
+                            <label for="hip" class="btn input-group-text form-control">Hip</label>
+                            <input type="text" name="waist" class="form-control">
+                            <button type="submit"class="btn btn-success form-control">Buy</button>
+                            </div>
+                    </form>
                 </div>
             </div>
     </div>

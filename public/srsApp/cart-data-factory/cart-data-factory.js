@@ -2,16 +2,16 @@ angular.module('srsApp').factory('cartDataFactory', cartDataFactory);
 
 function cartDataFactory($http) {
   return {
-    getCart: getCart,
-    cartAddOne: cartAddOne
+    getOne: getOne,
+    addOne: addOne
   };
 
-  function getCart() {
+  function getOne() {
     return $http.get('/api/cart').then(complete).catch(failed);
   }
 
-  function cartAddOne(id) {
-    return $http.get('api/cart/:id').then(complete).catch(failed);
+  function addOne(id) {
+    return $http.post('/api/cart/add-to-cart/' + id).then(complete).catch(failed);
   }
 
   function complete(response) {

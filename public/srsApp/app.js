@@ -26,6 +26,16 @@ function config($routeProvider) {
 		controller:ShoppingCartController,
 		controllerAs:'vm'
 	})
+	.when('/signin', {
+		templateUrl:'srsApp/signin/signin.html',
+		controller:SignInController,
+		controllerAs:'vm'
+	})
+	.when('/signup', {
+		templateUrl:'srsApp/signup/signup.html',
+		controller:SignUpController,
+		controllerAs:'vm'
+	})
 	/*
 	.when('/checkout', {
 		templateUrl:'srsApp/checkout/checkout.html',

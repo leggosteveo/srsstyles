@@ -8,7 +8,7 @@
   	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav ng-controller="NavController"class="navbar navbar-expand-lg navbar-light">
 	    <div class="container">
 	    	<a class="navbar-brand" href="#!"><img id="navimg" src="srs-styles-logo.jpg"></a>
 	        <button type="button" 
@@ -27,14 +27,14 @@
 					<li>
 						<a href="#!/shopping-cart" class="nav-link">
 							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-							<span class="badge">{{session.cart.totalQty}}</span>
+							<span class="badge">{{cart.totalQty}}</span>
 						</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
 						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="/user/signup">Sign Up</a>
-						  <a class="dropdown-item" href="/user/signin">Sign In</a>
+						  <a class="dropdown-item" href="#!/signup">Sign Up</a>
+						  <a class="dropdown-item" href="#!/signin">Sign In</a>
 						</div>
 					</li>
 	            </ul>
@@ -105,13 +105,17 @@
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/angular-route/angular-route.js"></script>
 <script src="srsApp/app.js"></script>
+<script src="srsApp/nav/nav-controller.js"></script>
 <script src="srsApp/home/home-controller.js"></script>
 <script src="srsApp/firstPage/firstPage-controller.js"></script>
 <script src="srsApp/product-data-factory/product-data-factory.js"></script>
 <script src="srsApp/cart-data-factory/cart-data-factory.js"></script>
+<script src="srsApp/user-data-factory/user-data-factory.js"></script>
 <script src="srsApp/styles/styles-controller.js"></script>
 <script src="srsApp/single-style/single-style-controller.js"></script>
 <script src="srsApp/shopping-cart/shopping-cart-controller.js"></script>
+<script src="srsApp/signin/signin-controller.js"></script>
+<script src="srsApp/signup/signup-controller.js"></script>
 </div>
 </body>
 </html>
