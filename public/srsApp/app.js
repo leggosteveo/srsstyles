@@ -6,6 +6,11 @@ function config($routeProvider) {
 		controller:HomeController,
 		controllerAs:'vm'
 	})
+	.when('/checkout', {
+		templateUrl:'srsApp/checkOut/checkOut.html',
+		controller:CheckOutController,
+		controllerAs:'vm'
+	})
 	.when('/firstPage', {
 		templateUrl:'srsApp/firstPage/firstPage.html',
 		controller:FirstPageController,

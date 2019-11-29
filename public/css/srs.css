@@ -1,6 +1,9 @@
 body {
+	background-color: black;
 	height: 100%;
 	margin: 0;
+	padding: 0 5%;
+	color: #b51111;
 }
 
 html {
@@ -64,8 +67,24 @@ nav {
 }
 
 #navimg {
-	height: 200px;
-	width: 200px;
+	border-radius: 5%;
+	height: 80px;
+	width: 80px;
+}
+
+.badge-secondary {
+	background-color: #b51111;
+}
+
+.btn-success {
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+
+.cart-badge {
+	background-color: white;
+	border-radius: 45%;
 }
 
 .categoryDiv {
@@ -78,10 +97,10 @@ nav {
 
 .categoryHeader h1 {
 
-	color: black;
+	color: #b51111;
 	font-family: brush script mt, cursive;
 	font-size: 300%;
-	text-shadow: 2px 4px silver;
+	text-shadow: 1px 0px silver;
 }
 
 .connectRow {
@@ -108,13 +127,21 @@ nav {
 	max-width: 95%;
 }
 
+.input-group {
+	font-size: 5%;
+}
+
 .itemPic {
 	margin: 5% auto;
 	width: 100%;
 }
 
-.navbar-light .navbar-nav .nav-link {
-	color: black;
+.navbar-dark .navbar-nav .nav-link {
+	color: #b51111;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #b51111;
 }
 
 .navbar-nav {
@@ -126,8 +153,14 @@ nav {
 	margin: auto;
 }
 
-
-
+.single-item {
+	padding: 2%;
+}
+.single-item-h1 {
+	color: black;
+	font-weight: bolder;
+	text-shadow: 0 0 1px black;
+}
 
 @media screen and (min-width: 500px) {
 	#about div {
@@ -136,6 +169,10 @@ nav {
 
 	.contactHeader {
 	font-size: 150%;
+	}
+	#navimg {
+		height: 200px;
+		width: 200px;
 	}
 }
 

@@ -4,6 +4,7 @@ var router = express.Router();
 var ctrlProducts = require('../controllers/products.controllers.js');
 var ctrlUsers = require('../controllers/users.controllers.js');
 var ctrlCart = require('../controllers/cart.controllers.js');
+var ctrlPurchases = require('../controllers/purchases.controllers.js');
 
 // Products routes
 router
@@ -32,7 +33,11 @@ router
   .get(ctrlCart.getOne);
 
 router
-  .route('/cart/add-to-cart/:Id')
-  .post(ctrlCart.addOne);
+  .route('/cart/add-to-cart/:id')
+  .get(ctrlCart.addOne);
 
+// Purchase Routes
+router
+  .route('/makePurchase')
+  .post(ctrlPurchases.createPurchase);
 module.exports = router;

@@ -5,7 +5,6 @@ var app = express();
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
-var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var session = require('express-session');
@@ -15,21 +14,49 @@ var routes = require('./api/routes');
 
 var store = new MongoDBStore({
   uri: 'mongodb://jovon07:Bulldogs1@ds237308.mlab.com:37308/srsstyles',
+  databaseName: 'srsstyles',
   collection: 'carts'
+},
+function(error) {
+  // Should have gotten an error
+  console.log(error);
+});
+
+store.on('error', function(error) {
+  console.log(error);
 })
+
+const stripe = require('stripe')('sk_test_dd14u9bpNSzvL3awpktO0JFp00qudlxMUK');
+
+(async () => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ['card'],
+    line_items: [{
+      name: 'T-shirt',
+      description: 'Comfortable cotton t-shirt',
+      images: ['https://example.com/t-shirt.png'],
+      amount: 500,
+      currency: 'usd',
+      quantity: 1,
+    }],
+    success_url: '/purchaseSuccess?session_id={CHECKOUT_SESSION_ID}',
+    cancel_url: '/cancelPurchase',
+  });
+})();
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(cookieParser());
 
 app.use(session({
     secret: 'mysupersecret',
     cookie: {
-      maxAge: 180 * 60 * 1000 // 3 hours
+      maxAge: 180 * 60 * 1000, // 3 hours
+      secure: false
     },
+    store: store,
     resave: true,
-    saveUninitialized: false,
-    store: store
+    saveUninitialized: true
 }));
 app.use(flash());
 app.use(passport.initialize());
@@ -37,7 +64,7 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
-    res.locals.session = req.session;
+  req.session.cookie.maxAge = 180 * 60 * 1000;
     next();
 });
 

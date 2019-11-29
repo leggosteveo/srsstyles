@@ -1,30 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <style>
-        .btn-success {
-            background-color: black;
-        }
-
-        .input-group {
-            font-size: 5%;
-        }
-
-        .single-item {
-            padding: 2%;
-        }
-        .single-item-h1 {
-            color: black;
-            font-weight: bolder;
-            text-shadow: 0 0 1px black;
-        }
-        #navimg {
-            height:200px;
-            width:200px;
-        }
-    </style>
-</head>
 <body>
  
     <div class="container single-item">
@@ -36,18 +11,16 @@
                 <div class="col-12 col-sm-6">
                     <h4>${{product.price}}</h4> 
                     <div><p>{{product.description}}</p></div>
-                    <hr>
-                    <form action="/api/cart/add-to-cart/{{product._id}}" method="post">
+                    <!-- <hr>
+                    <form novalidate>
                         <div class="input-group" role="group">
-                            <label for="bust" class="btn input-group-text form-control">Bust</label>
-                            <input type="text" name="bust" class="form-control">
-                            <label for="waist" class="btn input-group-text form-control">Waist</label>
-                            <input type="text" name="waist" class="form-control">
-                            <label for="hip" class="btn input-group-text form-control">Hip</label>
-                            <input type="text" name="waist" class="form-control">
-                            <button type="submit"class="btn btn-success form-control">Buy</button>
+                            <label class="btn input-group-text form-control">Bust<input ng-model="product.bust" type="text" name="bust" class="form-control"></label>
+                            <label class="btn input-group-text form-control">Waist<input ng-model="product.waist" type="text" name="waist" class="form-control"></label>
+                            <label class="btn input-group-text form-control">Hip <input ng-model="product.hip" type="text" name="hip" class="form-control"></label>
+                            <button ng-click="addToCart()" class="btn btn-success form-control">Buy</button>
                             </div>
-                    </form>
+                    </form> -->
+                    <button ng-click="addToCart()" class="btn btn-success form-control">Buy</button>
                 </div>
             </div>
     </div>

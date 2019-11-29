@@ -2,6 +2,10 @@ nav {
 		display: none !important;
 }
 
+body {
+	padding: 0 !important;
+}
+
 .view1 {
 	height: 100%;
 }
