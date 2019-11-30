@@ -1,9 +1,9 @@
 angular.module('srsApp').controller('CheckOutController', CheckOutController);
 
-function CheckOutController($http, $scope, cartDataFactory, userDataFactory) {
-   userDataFactory.getUser().then(function(response) {
+function CheckOutController($scope, cartDataFactory) {
+   /* userDataFactory.getUser().then(function(response) {
        $scope.user = null;
-   })
+   }) */
 
 
    cartDataFactory.getOne().then(function(response) {
